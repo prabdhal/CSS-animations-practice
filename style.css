@@ -34,3 +34,71 @@
 .background-1:hover .square-3 {
   transform: translateX(-100%);
 }
+
+.background-2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.square-4,
+.square-5,
+.square-6 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  /* Bounce transition copied and pasted from the 
+  inspector by clicking the ease property value 
+  and then choosing one of several animations */
+  transition: all 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.background-2:hover .square-4 {
+  transform: translateX(100%);
+  background-color: yellow;
+}
+
+.background-2:hover .square-5 {
+  transform: translateY(-100%);
+  background-color: yellow;
+}
+
+.background-2:hover .square-6 {
+  transform: translateX(-100%);
+  background-color: yellow;
+}
+
+.background-3 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.square-7,
+.square-8,
+.square-9 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  /* Out Fast In Slow transition copied and pasted 
+  from the inspector by clicking the ease property 
+  value and then choosing one of several animations */
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.background-3:hover .square-7 {
+  transform: rotateX(360deg);
+  background-color: cyan;
+}
+
+.background-3:hover .square-8 {
+  transform: rotateY(360deg);
+  background-color: cyan;
+}
+
+.background-3:hover .square-9 {
+  transform: rotateZ(360deg);
+  background-color: cyan;
+}
