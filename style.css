@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.background-1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #eee;
+}
+
+.square-1,
+.square-2,
+.square-3 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  /* transition: property / duration / animation type / delay */
+  transition: transform 1s ease-in-out;
+}
+
+.background-1:hover .square-1 {
+  transform: translateX(100%);
+}
+
+.background-1:hover .square-2 {
+  transform: translateY(100%);
+}
+
+.background-1:hover .square-3 {
+  transform: translateX(-100%);
+}
