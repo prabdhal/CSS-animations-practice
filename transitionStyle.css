@@ -77,7 +77,7 @@
 
 .background-3 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #eee;
 }
 
@@ -113,7 +113,7 @@
 
 .background-4 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: #eee;
 }
 
@@ -149,7 +149,7 @@
 
 .background-5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   background-color: #eee;
 }
 
@@ -167,88 +167,65 @@
 }
 
 .background-5:hover .square-13 {
-  transform: rotateX(360deg);
+  transform: matrix(1.5, 2, 2, 1.5, 4, 2);
   background-color: cyan;
 }
 
 .background-5:hover .square-14 {
-  transform: rotateY(360deg);
+  transform: matrix(5, 0, 2, 0.5, 2, 1);
   background-color: cyan;
 }
 
 .background-5:hover .square-15 {
-  transform: rotateZ(360deg);
+  transform: matrix(6, 3, 0, 1, 2.5, 0);
   background-color: cyan;
 }
 
-/* ########################## ??? ############################ */
+/* ########################## FUN PRACTICE ############################ */
 
 .background-6 {
   display: flex;
-  justify-content: space-between;
+  height: 500px;
+  justify-content: space-around;
+  align-items: flex-end;
   background-color: #eee;
 }
 
-.square-16,
-.square-17,
+.square-16 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  transition: all 1s cubic-bezier(0.41, -0.27, 0.37, 1.95);
+}
+
+.square-17 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border: 2px solid black;
+  transition: all 1s cubic-bezier(0.92, 0.1, 1, 1);
+}
+
 .square-18 {
   width: 100px;
   height: 100px;
   background-color: red;
   border: 2px solid black;
-  /* Out Fast In Slow transition copied and pasted 
-  from the inspector by clicking the ease property 
-  value and then choosing one of several animations */
-  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 1s ease-in-out;
 }
 
 .background-6:hover .square-16 {
-  transform: rotateX(360deg);
-  background-color: cyan;
+  transform: translateY(-400%);
+  background-color: greenyellow;
 }
 
 .background-6:hover .square-17 {
-  transform: rotateY(360deg);
-  background-color: cyan;
+  transform: translateY(-400%);
+  background-color: palevioletred;
 }
 
 .background-6:hover .square-18 {
-  transform: rotateZ(360deg);
-  background-color: cyan;
-}
-
-/* ########################## ??*&?? ############################ */
-
-.background-7 {
-  display: flex;
-  justify-content: space-between;
-  background-color: #eee;
-}
-
-.square-19,
-.square-20,
-.square-21 {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border: 2px solid black;
-  /* Out Fast In Slow transition copied and pasted 
-  from the inspector by clicking the ease property 
-  value and then choosing one of several animations */
-  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.background-7:hover .square-19 {
-  transform: rotateX(360deg);
-  background-color: cyan;
-}
-
-.background-7:hover .square-20 {
-  transform: rotateY(360deg);
-  background-color: cyan;
-}
-
-.background-7:hover .square-21 {
-  transform: rotateZ(360deg);
-  background-color: cyan;
+  transform: translateY(-400%);
+  background-color: burlywood;
 }
